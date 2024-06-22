@@ -1,0 +1,8 @@
+fn main() {
+    let hello_world: Vec<i32> = vec![
+        0x48, 0x65, 0x6C, 0x6C, 0x6F, 0x2C, 0x20, 0x57, 0x6F, 0x72, 0x6C, 0x64, 0x21,
+    ];
+
+    let _message: String = hello_world.iter().map(|&h| h as u8 as char).collect();
+    println!("{}", _message)
+}
